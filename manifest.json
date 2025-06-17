@@ -1,2 +1,17 @@
-rsconnect::writeManifest()
-rsconnect::writeManifest(contentCategory = "site")
+{
+  "version": 1,
+  "locale": "en_US",
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "app.R"
+  },
+  "packages": {
+    "shiny": {},
+    "shinydashboard": {},
+    ...
+  },
+  "files": {
+    "All groups CPI, Australia, quarterly and annual movement (%).xlsx": {},
+    ...
+  }
+}
