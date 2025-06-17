@@ -1,17 +1,5 @@
-{
-  "version": 1,
-  "locale": "en_US",
-  "metadata": {
-    "appmode": "shiny",
-    "entrypoint": "app.R"
-  },
-  "packages": {
-    "shiny": {},
-    "shinydashboard": {},
-    ...
-  },
-  "files": {
-    "All groups CPI, Australia, quarterly and annual movement (%).xlsx": {},
-    ...
-  }
-}
+install.packages("rsconnect")
+# install.packages("devtools")
+devtools::install_github("rstudio/rsconnect")
+rsconnect::writeManifest()
+rsconnect::writeManifest(contentCategory = "site")
